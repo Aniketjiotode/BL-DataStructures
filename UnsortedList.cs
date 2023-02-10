@@ -204,6 +204,11 @@ namespace DataStructures.UnOrderedList
             {
                 if (t.data==input)// input =30
                 {
+                        if(pre == null)
+                    {
+                        head = t.next;
+                        return true;
+                    }
                     pre.next = t.next;
                     return true;
                 }
